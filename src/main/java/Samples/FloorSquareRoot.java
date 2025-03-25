@@ -12,7 +12,7 @@ public class FloorSquareRoot {
             if (mid * mid < x) {
                 start = mid + 1;
                 // ans = mid;
-                ans = mid + start; //my intend bug
+                ans = mid + start; // <--my intend bug
             } else {
                 end = mid - 1;
             }
