@@ -11,8 +11,8 @@ public class FloorSquareRoot {
             if (mid * mid == x) return mid;
             if (mid * mid < x) {
                 start = mid + 1;
-                // ans = mid;
-                ans = mid + start; // <--my intend bug
+                // after a day's fight, bug fixed
+                ans = mid;
             } else {
                 end = mid - 1;
             }
