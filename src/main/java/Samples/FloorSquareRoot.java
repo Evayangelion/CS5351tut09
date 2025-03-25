@@ -1,5 +1,6 @@
 package Samples;
 
+
 public class FloorSquareRoot {
     public static int floorSqrt(int x) {
         if (x == 0 || x == 1) return x;
@@ -10,7 +11,8 @@ public class FloorSquareRoot {
             if (mid * mid == x) return mid;
             if (mid * mid < x) {
                 start = mid + 1;
-                ans = mid;
+                // ans = mid;
+                ans = mid + start; //my intend bug
             } else {
                 end = mid - 1;
             }
